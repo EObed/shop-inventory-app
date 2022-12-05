@@ -1,0 +1,14 @@
+.main{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding: 90px 0 90px 0;
+}
+
+.sub-main{
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    width: 35%;
+    box-shadow: 11px 12px 13px 11px rgb(200, 200, 200);
+}
