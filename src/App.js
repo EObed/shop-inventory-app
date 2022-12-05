@@ -2,9 +2,9 @@ import './App.css';
 
 function App() {
   return (
-    <div className="main">
-      <div className="sub-main">
-
+    <div className="main-page">
+      <div className="title-bar">
+        <p>lorem</p>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-.main{
+/* .main{
     justify-content: center;
     text-align: center;
     display: flex;
@@ -11,4 +11,11 @@
     height: 550px;
     width: 35%;
     box-shadow: 11px 12px 13px 11px rgb(200, 200, 200);
+} */
+
+.main-page{
+    display: flex;
+    background: linear-gradient(45deg, rgba(43, 185, 14, 0.587), rgba(24, 103, 231));
+    height: 100%;
+    width: 100%;
 }
