@@ -15,7 +15,59 @@
 
 .main-page{
     display: flex;
-    background: linear-gradient(45deg, rgba(43, 185, 14, 0.587), rgba(24, 103, 231));
     height: 100%;
     width: 100%;
+    flex-wrap: wrap;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    /* background: linear-gradient(45deg, rgb(173, 236, 161), rgb(158, 185, 230)); */
+}
+
+.title-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 50px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+button{
+    width: 90px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: blue;
+}
+
+button:hover{
+    color: aliceblue;
+}
+
+.content-box{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-header{
+    width: 100%;
+    font-size: 48px;
+    font-family: proxima-nova, sans-serif;
 }
