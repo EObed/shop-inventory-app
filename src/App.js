@@ -47,7 +47,9 @@ function App() {
                     <img src="/logo1.png" alt="MyShop Logo" className="logo-bottom"></img>
                 </div>
                 <div className="contact-info">
-
+                    <div>
+                        Contact Us
+                    </div>
                 </div>
             </div>
         </div>
