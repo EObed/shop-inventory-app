@@ -74,11 +74,28 @@ button:hover{
     font-family: proxima-nova, sans-serif;
 }
 
+.main-content{
+    display: flex;
+    width: 90%;
+}
+
+.description{
+    margin-left: 30px;
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.description-body{
+    font-family: sans-serif;
+    text-align: justify;
+}
+
 .text-boxes{
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    
+    width: 15%;
+    margin: auto;
 }
 
 .text-box1{
@@ -100,4 +117,11 @@ button:hover{
     width: 500px;
     box-shadow: 11px 12px 13px 11px rgb(200, 200, 200);
     margin: 40px;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: aliceblue;
+    margin-top: 300px;
 }
