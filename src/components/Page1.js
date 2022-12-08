@@ -51,10 +51,16 @@ function Page1() {
                 </div>
                 <div className="contact-info">
                     <div className="contact-text">
-                        Contact Us:       <i class="fa fa-phone" aria-hidden="true"></i>
+                        Contact Us:       
                     </div>
-                    <div className="contacts">
-                    
+                    <div className='phone-number'>
+                        <i class="fa fa-phone" aria-hidden="true"></i> 0501316137
+                    </div>
+                    <div className="whatsapp">
+                        <i class="fab fa-whatsapp fa-1.5x"></i> 0572205555
+                    </div>
+                    <div className='email'>
+                        <i class="fa fa-envelope" aria-hidden="true"></i> <a href='obedeffum10@gmail.com' >obedeffum10@gmail.com</a>
                     </div>
                 </div>
             </div>
