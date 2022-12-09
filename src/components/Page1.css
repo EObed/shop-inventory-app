@@ -3,7 +3,7 @@
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
-    
+    background-image: url("https://pin.it/4g6zYs3");
 }
 
 img{
@@ -21,7 +21,7 @@ img{
 
 .header{
     text-align: center;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 50px;
 }
 .buttons{

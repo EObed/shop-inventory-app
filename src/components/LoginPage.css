@@ -7,11 +7,11 @@
 
 .sub-main{
     display: flex;
-    justify-content: center;
-    height: 550px;
+    height: 500px;
     width: 35%;
     box-shadow: 11px 12px 13px 11px rgb(200, 200, 200);
     border-radius: 50px 25px;
+    flex-direction: column;
 }
 
 /* .person-icon{
@@ -23,6 +23,53 @@
     text-align: left;
 }
 
-.phone-number{
-    margin-top: 15px;
+.person-icon{
+    margin-top: 20px;
 }
+
+.details-section{
+    margin-top: 40px;
+    padding: 10px;   
+}
+
+input{
+    width: 350px;
+    height: 40px;
+    display: inline-block;
+}
+
+.email-box{
+    padding: 8px;
+    position: relative;
+}
+
+.email-box i{
+    position: absolute;
+    padding: 4px;
+}
+
+.mail{
+    padding-left: 35px;
+}
+
+.password-box{
+    padding: 8px;
+    position: relative;
+}
+
+.password-box i{
+    position: absolute;
+    padding: 4px;
+}
+
+.eye-icon{
+    position: absolute;
+    padding-left: 333px;
+    margin-top: 1px
+
+}
+
+.pass{
+    padding-left: 32px;
+}
+

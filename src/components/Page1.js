@@ -60,7 +60,7 @@ function Page1() {
                         <i class="fab fa-whatsapp fa-1.5x"></i> 0572205555
                     </div>
                     <div className='email'>
-                        <i class="fa fa-envelope" aria-hidden="true"></i> <a href='obedeffum10@gmail.com' >obedeffum10@gmail.com</a>
+                        <i class="fa fa-envelope" aria-hidden="true"></i> obedeffum10@gmail.com
                     </div>
                 </div>
             </div>
