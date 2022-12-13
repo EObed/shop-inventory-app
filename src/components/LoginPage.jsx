@@ -20,6 +20,7 @@ function LoginPage() {
             </div>
             <div className='bottom-section'>
               <div><button>Log In</button></div>
+              <div><button className='fpass'>Forgot Password</button>/<button>Sign Up</button></div>
             </div>
         </div>
     </div>

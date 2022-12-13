@@ -21,7 +21,10 @@ function Page1() {
                             </button>
                     </div>
                     <div>
-                        <button>Sign Up</button>
+                        <button>
+                           <Link to ="/signup"> Sign Up</Link>
+                            
+                            </button>
                     </div>
                 </div>
             </div>
