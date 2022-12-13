@@ -22,7 +22,7 @@ function Page1() {
                     </div>
                     <div>
                         <button>
-                           <Link to ="/signup"> Sign Up</Link>
+                           <Link to="/signup"> Sign Up</Link>
                             
                             </button>
                     </div>

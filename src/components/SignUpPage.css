@@ -1,0 +1,17 @@
+form{
+    
+}
+
+.sPage{
+    margin: 20px;
+}
+
+.subPage{
+    display: flex;
+    height: 600px;
+    width: 900px;
+    box-shadow: 11px 12px 13px 11px rgb(200, 200, 200);
+    border-radius: 50px 25px;
+    flex-direction: column;
+    align-items: center;
+}

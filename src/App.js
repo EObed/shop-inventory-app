@@ -3,6 +3,7 @@ import "./App.css";
 import LoginPage from "./components/LoginPage";
 import Page1 from "./components/Page1";
 import {Routes,BrowserRouter,Route} from "react-router-dom"
+import SignUpPage from "./components/SignUpPage";
 
 function App() {
   return (
