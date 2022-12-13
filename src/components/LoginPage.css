@@ -64,9 +64,9 @@ input{
 
 .eye-icon{
     position: absolute;
-    padding-left: 333px;
-    margin-top: 1px
-
+    padding-left: 305px;
+    margin-top: 1px;
+    cursor: pointer;
 }
 
 .pass{

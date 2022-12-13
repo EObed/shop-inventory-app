@@ -1,6 +1,27 @@
 import React from 'react'
 import "./LoginPage.css"
+import { useState } from 'react'
+import {Icon} from 'react-icons-kit'
+import {eye} from 'react-icons-kit/feather/eye'
+import {eyeOff} from 'react-icons-kit/feather/eyeOff'
+
+
+
 function LoginPage() {
+
+  const [type, setType] = useState('password')
+  const [icon, setIcon] = useState(eye)
+
+  const handleToggle =()=>{
+    if (type==='password'){
+      setIcon(eyeOff)
+      setType('text')
+    } else{
+      setIcon(eye)
+      setType('password')
+    }
+  }
+
   return (
     <div className='main'>
         <div className='sub-main'>
@@ -14,8 +35,8 @@ function LoginPage() {
               </div>
               <div className='password-box'>
               <i class="fa-solid fa-lock fa-2x"></i>
-              <div className='eye-icon'><i class="fa fa-eye fa-2x" aria-hidden="true"></i></div>
-              <input type="text" placeholder='Password' className='pass' required ></input>
+              <span onClick={handleToggle} className='eye-icon'><Icon icon={icon} size={25}/></span>
+              <input type={type} placeholder='Password' className='pass' required ></input>
               </div>
             </div>
             <div className='bottom-section'>
