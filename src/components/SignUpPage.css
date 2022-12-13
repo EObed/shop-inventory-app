@@ -1,7 +1,3 @@
-form{
-    
-}
-
 .sPage{
     margin: 20px;
 }
@@ -14,4 +10,9 @@ form{
     border-radius: 50px 25px;
     flex-direction: column;
     align-items: center;
+}
+
+.sign-but{
+    align-items: center;
+    text-align: center;
 }

@@ -4,6 +4,7 @@ import { useState } from 'react'
 import {Icon} from 'react-icons-kit'
 import {eye} from 'react-icons-kit/feather/eye'
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
+import { Link } from 'react-router-dom'
 
 
 
@@ -41,7 +42,7 @@ function LoginPage() {
             </div>
             <div className='bottom-section'>
               <div><button>Log In</button></div>
-              <div><button className='fpass'>Forgot Password</button>/<button>Sign Up</button></div>
+              <div><button className='fpass'>Forgot Password</button>/<button><Link to="/signup">Sign Up</Link></button></div>
             </div>
         </div>
     </div>

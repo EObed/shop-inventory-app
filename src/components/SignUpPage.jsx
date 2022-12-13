@@ -18,8 +18,9 @@ const SignUpPage = () => {
                     <label for="mail">E-mail:</label><br/>
                     <input type="text" id="mail" name="mail" /><br/>
                     <label for="pass">Password:</label><br/>
-                    <input type="text" id="pass" name="pass" /><br/>
+                    <input type="password" id="pass" name="pass" /><br/>
                 </form>
+            <div className='sign-but'><button>Sign Up</button></div>
             </div>
         </div>
     </div>
