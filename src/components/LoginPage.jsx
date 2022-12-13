@@ -11,14 +11,14 @@ import { Link } from 'react-router-dom'
 function LoginPage() {
 
   const [type, setType] = useState('password')
-  const [icon, setIcon] = useState(eye)
+  const [icon, setIcon] = useState(eyeOff)
 
   const handleToggle =()=>{
     if (type==='password'){
-      setIcon(eyeOff)
+      setIcon(eye)
       setType('text')
     } else{
-      setIcon(eye)
+      setIcon(eyeOff)
       setType('password')
     }
   }
