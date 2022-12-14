@@ -1,5 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./SignUpPage.css"
+import { useRef, useState, useEffect } from 'react'
+
+
+
 const SignUpPage = () => {
   return (
     <div className='sPage'>
@@ -21,6 +26,9 @@ const SignUpPage = () => {
                     <input type="password" id="pass" name="pass" /><br/>
                 </form>
             <div className='sign-but'><button>Sign Up</button></div>
+            </div>
+            <div className='bottom'>
+                <p>Already registered? <button><Link to="/login">Log In</Link></button></p>
             </div>
         </div>
     </div>
