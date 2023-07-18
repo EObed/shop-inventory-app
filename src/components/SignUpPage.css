@@ -1,9 +1,14 @@
 .sPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
 }
 
 .subPage{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 600px;
     width: 900px;
     box-shadow: 11px 12px 13px 11px rgb(200, 200, 200);

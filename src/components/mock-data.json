@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "itemName": "Gari",
+    "quantity": "4 bags",
+    "datePurchased": "16/03/2023",
+    "expiryDate": "N/A"
+  },
+  {
+    "id": 2,
+    "itemName": "Beans",
+    "quantity": "10 bags",
+    "datePurchased": "1/02/2023",
+    "expiryDate": "12/12/2023"
+  },
+  {
+    "id": 3,
+    "itemName": "Maize",
+    "quantity": "12 bags",
+    "datePurchased": "6/03/2023",
+    "expiryDate": "12/11/2023"
+  },
+  {
+    "id": 4,
+    "itemName": "Rice",
+    "quantity": "8 bags",
+    "datePurchased": "5/05/2023",
+    "expiryDate": "5/05/2024"
+  },
+  {
+    "id": 5,
+    "itemName": "Milo",
+    "quantity": "10 sachets",
+    "datePurchased": "1/04/2023",
+    "expiryDate": "1/07/2024"
+  }
+]

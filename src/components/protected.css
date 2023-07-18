@@ -1,0 +1,13 @@
+.day{
+    display: flex;
+}
+.sidebar1{
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    background-color: aquamarine;
+}
+.mainpage{
+    width: 30%;
+    height: 100vh;
+}

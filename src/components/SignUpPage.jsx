@@ -38,11 +38,11 @@ const SignUpPage = () => {
                     <label for="bizz">Name of business:</label><br/>
                     <input type="text" id="bizz" name="bizz" value={bizzname} onChange={e => setBizzname(e.target.value)}/><br/>
                     <label for="mail">E-mail:</label><br/>
-                    <input type="text" id="mail" name="mail" value={usermail} onChange={e => setUsermail(e.target.value)}/><br/>
+                    <input type="text" id="mail" name="mail" value={usermail} onChange={e => setUsermail(e.target.value)} /><br/>
                     <label for="pass">Password:</label><br/>
-                    <input type="password" id="pass" name="pass" value={userpass} onChange={e => setUserpass(e.target.value)}/><br/>
+                    <input type="password" id="pass" name="pass" value={userpass} onChange={e => setUserpass(e.target.value)} required /><br/>
                 </form>
-            <div className='sign-but'><button onClick={register}>Sign Up</button></div>
+            <div className='sign-but'><button onClick={register}><Link to="/protectedPage">Sign Up</Link></button></div>
             </div>
             <div className='bottom'>
                 <p>Already registered? <button><Link to="/login">Log In</Link></button></p>

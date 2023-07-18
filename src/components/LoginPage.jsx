@@ -4,7 +4,7 @@ import { useState } from 'react'
 import {Icon} from 'react-icons-kit'
 import {eye} from 'react-icons-kit/feather/eye'
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
-import { Link } from 'react-router-dom'
+import { Link,Navigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 
 
@@ -84,7 +84,7 @@ export const LoginPage = () => {
           type : 'LOGIN',
           payload
         }
-        ); alert('Success')
+        );Navigate("/protectedPage")
       }else{
         alert('Wrong Credentials')
       }
@@ -95,6 +95,7 @@ export const LoginPage = () => {
       <input type="text" id="mail" name="mail" value={usermail} onChange={e => setUsermail(e.target.value)}/>
       <input type="password" id="pass" name="pass" value={userpass} onChange={e => setUserpass(e.target.value)}/>
       <input type="button" value="Login" onClick={login}/>
+      
     </form>
   )
 }
