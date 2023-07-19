@@ -1,11 +1,43 @@
 import React, { useState } from 'react'
 import "./ToDoPage.css"
 import { Link } from "react-router-dom";
+import { nanoid } from '@reduxjs/toolkit';
+import ToDoRow from './ToDoRow';
+import data from "./todo-data.json"
 
 const ToDoPage = () => {
     document.body.style = 'background: aliceblue;'; 
 
-    // const [value, setValue] = useState("")
+    const [tasks, setTasks] = useState(data)
+
+    const [addformData, setAddFormData] = useState(
+        {taskName: ''}
+    )
+
+    const handleAddFormSunmit = (event) =>{
+        event.preventDefault()
+
+        const newTask = {
+            id: nanoid(),
+            taskName: addformData.taskName
+        }
+
+        const newTaskArray = [...tasks, newTask]
+
+        setTasks(newTaskArray)
+    }
+
+    const handleAddToForm=(event)=>{
+        event.preventDefault()
+
+        const inputName = event.target.getAttribute('name')
+        const inputValue = event.target.value
+
+        const newformData = {...addformData}
+        newformData[inputName]=inputValue
+
+        setAddFormData(newformData)
+    }
 
 
   return (
@@ -27,11 +59,17 @@ const ToDoPage = () => {
             <div className='to-do-list'>
                 <div className='to-do-body-header'><h3>MyShop To-Do List</h3></div>
                 <div className='to-do-b'>
-                    <form className='to-do-form'>
-                        <input type='text' className='to-do-input' placeholder='Enter task'></input>
+                    <form className='to-do-form' onSubmit={handleAddFormSunmit}>
+                        <input type='text' className='to-do-input' placeholder='Enter task' name='taskName' onChange={handleAddToForm}></input>
                         <button type='submit' className='to-do-btn'>Add Task</button>                        
                     </form>
-                    <div className='to-do-form1'></div>
+                    <div className='to-do-form1'>
+                        <tbody>
+                            {tasks.map((task)=>(
+                                <ToDoRow task={task}/>
+                            ))}
+                        </tbody>
+                    </div>
                 </div>
             </div>
         </div>
