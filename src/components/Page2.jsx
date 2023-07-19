@@ -133,7 +133,7 @@ export const Page2 = () => {
                     <ul>
                         <li>MyShop Inventory</li>
                         <li>
-                            <Link>MyShop To-Do List</Link>
+                            <Link to="/todo">MyShop To-Do List</Link>
                         </li>
                         <li>
                             <Link>MyShop Budget Tracker</Link>

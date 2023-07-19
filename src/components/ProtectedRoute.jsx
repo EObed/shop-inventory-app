@@ -9,7 +9,7 @@ function ProtectedRoute() {
         <h1>MyShop App</h1>
         <ul>
             <li><Link to="/page2">MyShop Inventory</Link></li>
-            <li><Link>MyShop To-Do List</Link></li>
+            <li><Link to="/todo">MyShop To-Do List</Link></li>
             <li><Link>MyShop Budget Tracker</Link></li>
         </ul>
     </div>

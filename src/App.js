@@ -7,6 +7,7 @@ import SignUpPage from "./components/SignUpPage";
 import { useSelector } from "react-redux";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { Page2 } from "./components/Page2";
+import ToDoPage from "./components/ToDoPage";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
        <Route path="/login" exact element={ <LoginPage/>}/>
        <Route path="/protectedPage" exact element={ <ProtectedRoute />}/>
        <Route path="/page2" exact element={ <Page2/>}/>
+       <Route path="/todo" exact element={<ToDoPage/>} />
     </Routes>
     </BrowserRouter>
    
