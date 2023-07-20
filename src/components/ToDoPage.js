@@ -39,6 +39,16 @@ const ToDoPage = () => {
         setAddFormData(newformData)
     }
 
+    const handleDeleteclick = (taskId) => {
+        const newTaskArray = [...tasks]
+
+        const index = tasks.findIndex((task)=>task.id === taskId)
+
+        newTaskArray.splice(index, 1)
+
+        setTasks(newTaskArray)
+    }
+
 
   return (
     
@@ -64,11 +74,11 @@ const ToDoPage = () => {
                         <button type='submit' className='to-do-btn'>Add Task</button>                        
                     </form>
                     <div className='to-do-form1'>
-                        <tbody>
+                        <div>
                             {tasks.map((task)=>(
-                                <ToDoRow task={task}/>
+                                <ToDoRow task={task} handleDeleteclick={handleDeleteclick}/>
                             ))}
-                        </tbody>
+                        </div>
                     </div>
                 </div>
             </div>
